@@ -1,0 +1,292 @@
+@media screen and (max-width: 1130px) {
+    .site_header .navbar-nav .nav-item {
+        margin-right: 17px;
+    }
+    .navbar-toggler-icon {
+        background: url(../images/icons/menu.png) no-repeat;
+        background-size: 30px;
+        margin-top: 8px;
+    }
+    .navbar-nav.ms-auto.mb-lg-0 {
+        margin-top: 25px;
+        padding-bottom: 20px;
+    }
+    .project_section .projects_tabs .nav-pills .nav-item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .work_process_section .process_ul li .process_box h6 {
+        height: 18px;
+    }
+    .work_process_section .process_ul li .process_box {
+        padding: 60px 10px 70px 10px;
+    }
+    .banner_image img {
+        max-width: 100%;
+        
+    }
+}
+@media screen and (max-width:1024px){
+    .home_banner_section .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .banner_text h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .contact_section .contact_form {
+        padding: 40px 45px 40px 45px;
+       
+    }
+    .home_banner_section .banner_text {
+        padding-top: 10px;
+        padding-bottom: 75px;
+        text-align: center;
+    }
+    .banner_image img {
+        margin: 0 auto;
+    }
+    .heading h1 {
+        font-size: 35px;
+    }
+    .heading.heading_center  h1 {
+        display: inline;
+    }
+    .heading_center h1::before {
+        right: 31%;
+    }
+    .project_section  .heading_center h1::before {
+        right: 27%;
+    }
+    .home_aboutus_section {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .home_aboutus_section .content{
+        margin-bottom: 35px;
+    }
+    .home_aboutus_section .heading {
+        margin-top: 0;
+    }
+    .home_service_section {
+        padding: 65px 0;
+    }
+    .technology_section {
+        padding: 65px 0;
+    }
+    .technology_section .technology_box ul li {
+        padding: 15px 0 15px 10px;
+    }
+    .work_process_section {
+        padding: 65px 0;
+    }
+    .contact_section {
+        padding: 65px 0;
+    }
+    .contact_section .logo_box {
+        margin-top: 25px;
+    }
+
+    .site_header .navbar-collapse {
+       /* position: absolute;*/
+        background: #ffffff;
+        left: 0;
+        width: 100%;
+        height: auto;
+        top: 96px;
+        z-index: 999;
+        padding-left: 20px;
+    }
+    .site_header .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .site_header .container{
+        padding: 0;
+    }
+    .contact_section .heading_center h1::before {
+        right: 25%;
+    }
+    .home_aboutus_section .home_aboutus_left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .home_aboutus_section heading.mobile_heading{
+        margin-bottom: 40px;
+    }
+    .home_aboutus_section .desktop_heading{
+        display: none;
+    }
+    .site_header  .sub-menu{
+        position: unset;
+        border: 0;
+        background: transparent;
+        width: 100%;
+    }
+    .site_header  .sub-menu li{
+        border-bottom: 0;
+    }
+    .submenu-active{
+        display: block;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 635px) {
+    .home_banner_section .banner_image {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo_box {
+        margin-top: 40px;
+    }
+    .work_process_section .process_ul li {
+        width: 48%;
+        
+        
+        display: inline-block;
+    }
+    .work_process_section .process_ul {
+        display: block;
+    }
+    .work_process_section .process_ul li .process_box .right_arrow {
+        display: none;
+    }
+    .work_process_section .process_ul li:first-child .process_box, .work_process_section .process_ul li:last-child .process_box, .process_box {
+        border-radius: 15px;
+    }
+    .work_process_section .process_ul li {
+        width: 48%;
+        display: inline-block;
+        margin: 0.8%;
+        margin-bottom: 7px;
+    }
+    .home_aboutus_section .home_aboutus_left .icon_box_up2 {
+        margin-top: -40px;
+    }
+}
+@media screen and (max-width: 575px){
+    .project_section .projects_tabs .nav-pills .nav-item {
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .project_section .projects_tabs .nav-pills .nav-link {
+        width: 100%;
+    }
+    .mobile_heading{
+        display: block;
+    }
+    .about_us .desktop_heading{
+        display: none;
+    }
+    .about_banner_section{
+        min-height: 400px;
+    }
+    .about_us img{
+        height: 100%;
+    }
+    .about_us .row .col-md-12:first-child{
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .work_process_section .process_ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .work_process_section .process_ul li .process_box{
+        padding: 30px 10px 40px;
+    }
+    .work_process_section .process_ul li {
+        width: calc(50% - 10px);
+        margin: 0%;
+        margin-bottom: 20px;}
+}   
+@media screen and (max-width:525px){
+    .navbar-brand img{
+        width: 220px;
+    }
+    .site_header .navbar-collapse {
+        top: 80px;
+    }
+    .site_header .navbar .navbar-nav {
+        margin-top: 10px;
+        padding-bottom: 15px;
+    }
+    .home_aboutus_section .home_aboutus_left {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width:430px){
+    .heading h1 {
+        font-size: 28px;
+    }
+    .heading_center h1::before {
+        right: 27%;
+    }
+    .heading{
+        margin-bottom: 50px;
+    }
+    .project_section  .heading_center h1::before {
+        right: 24%;
+    }
+    .home_banner_section .banner_text h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .banner_text h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .home_banner_section .banner_text h4{
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .home_banner_section .banner_text {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .home_banner_section .banner_text h6 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+    .contact_section .heading_center h1::before {
+        right: 19%;
+    }
+    .home_aboutus_section .icon_box h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .home_aboutus_section .icon_box {
+        padding: 20px 20px 30px 20px;
+    }
+    .contact_section .contact_form {
+        padding: 40px 25px 35px 25px;
+    }
+    .home_aboutus_section .home_aboutus_left .icon_box img {
+        width: 85px;
+    }
+    .home_aboutus_section .home_aboutus_left .icon_box img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .navbar-brand img{
+        width: 200px;
+    }
+    .home_aboutus_section .icon_box h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .home_aboutus_section .icon_box h6 {
+        font-size: 14px;
+    }
+}

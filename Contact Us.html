@@ -1,0 +1,269 @@
+<?php include('./includes/helper.php');?>
+<?php session_start() ?>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vrundavan Infosys Leading New Technology With.We decided to start the business after working for 4+ years in it industry and witnessing firsthand what development companies do to their clients.">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript,PHP,design,development,Wordpress">
+        <meta name="author" content="vrundavan infosys">
+         <meta name="robots" content="noindex,nofollow">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="assets/css/montserrat.css">
+        <link rel="stylesheet" href="assets/css/arial_rounded_bold.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen"/>
+        <!-- <link href="assets/images/favicon.png"> -->
+        <title>Vrundavan Infosys - We Are Design & Develop Your Website & Application</title>
+        <link rel="icon" href="assets/images/favicon.png">
+
+        <!-- WOW CSS -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Page CSS -->
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Title -->
+        <title>Vrundavan Infosys</title>
+
+    </head>
+    <body>
+
+    <!-- Header Start -->
+   
+
+    <header class="site_header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://vrundavaninfosys.com">
+                        <img src="assets/images/vrundavan_logo.png" alt="vrundavan_logo">
+                    </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a href="index.php" class="nav-link menu font_2_medium color_black active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="About Us.html" class="nav-link menu font_2_medium color_black">About Us</a>
+                            </li>
+                            <li class="nav-item has-child">
+                                <a  class="nav-link has-link menu font_2_medium color_black">Services <i class="fas fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                     <li class="menu-item"><a class="nav-link menu " href="Website Development.html">Web Design &amp; Development</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Mobile Application Development.html">Application Design &amp; Development</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Graphics Designing.html">Graphics Designing</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Digital Marketing.html">Digital Marketing</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Server Setup.html">Server Setup &amp; Support</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="nav-link menu font_2_medium color_black">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#how it works" class="nav-link menu font_2_medium color_black">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact Us.html" class="nav-link menu font_2_medium color_black">Contact Us</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Wrapper Start -->
+
+    <!-- Services Banner Section Start -->
+    <section class="contact_banner_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="banner_text text-center">
+                        <h1 class="font_1 color_white wow fadeInDown" data-wow-delay="0.2s">Contact Us</h1>
+                        <div class="breadcrumb wow fadeInDown"  data-wow-delay="0.2s"><a href="index.html">Home</a>&nbsp;<i class="fas fa-angle-double-right"></i>&nbsp;<a class="breadcrumb-active">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Banner Section end -->
+
+    <!-- Services Start -->
+    <section class="contact_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact_form wow fadeInLeft" data-wow-delay="0.3s">
+                        <form method="POST" action="<?php echo url('contact_form.php') ?>">
+                            <h2 class="font_2_bold color_black">Get in Touch</h2>
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom_form_control" placeholder="Full Name*" name="fname" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control custom_form_control" placeholder="Contact Number*" name="num"  minlength="10" maxlength="14" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control custom_form_control" placeholder="Email*" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-service" required name="service_id">
+                                    <option>Select Service</option>
+                                    <?php
+
+                                    include 'includes/connection.php';
+                                    $sql = "select * from services where status=1";
+                                    if ($result = $conn->query($sql)) {
+                                        while ($row = $result->fetch_assoc()) {
+                                            echo "<option value=".$row['id'].">".$row['name']."</option>";
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Message" name="message"></textarea>
+                            </div>
+                            <button class="blue_btn btn font_2_bold text-uppercase wow fadeInLeft" data-wow-delay="0.3s" type="submit" value="add" name="submit">Submit Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 contact_padding">
+                    <div class="logo_box wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="assets/images/footer_logo.svg" alt="footer_logo">
+                    </div>
+                    <ul class="contact_ul">
+                        <li class="wow fadeInDown">
+                            <div class="left">
+                                <img src="assets/images/icons/Location.svg" alt="map_circle">
+                            </div>
+                            <div class="right">
+                                <h6 class="color_black font_2_semibold font_2_medium text-uppercase">Address</h6>
+                                <span class="color_black font_2_medium">Surat, Gujarat, 300006</span>
+                            </div>
+                        </li>
+
+                        <li class="wow fadeInDown">
+                            <div class="left">
+                                <img src="assets/images/icons/Call.svg" alt="call_circle">
+                            </div>
+                            <div class="right">
+                                <h6 class="color_black font_2_semibold font_2_medium text-uppercase">Call US</h6>
+                                <span><a class="email_link" href="callto:9409481342"class="color_black font_2_medium">+91 9409481342</a></span>
+                            </div>
+                        </li>
+                        <li class="wow fadeInDown">
+                            <div class="left">
+                                <img src="assets/images/icons/email.svg" alt="mail_circle">
+                            </div>
+                            <div class="right">
+                                <h6 class="color_black font_2_semibold font_2_medium text-uppercase">Email</h6>
+                                <span><a class="email_link" href="mailto:info@vrundavaninfosys.com" class="color_black font_2_medium">Info@vrundavaninfosys.com</a></span>
+                                <div><a class="email_link" href="mailto:contact@vrundavaninfosys.com" class="color_black font_2_medium">contact@vrundavaninfosys.com</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social_links">
+                        <h4 class="font_2_bold color_black text-uppercase wow fadeInUp" data-wow-delay="0.3s">Follow Us</h4>
+                        <ul class="social_link_ul">
+                            <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="https://join.skype.com/invite/vbP8xVegUwAM" target="_blank"><i class="fab fa-skype"></i></a></li>
+                            <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="https://www.linkedin.com/company/78279858/admin/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://instagram.com/vrundavan_infosys?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    
+    <!-- Wrapper End -->
+
+    <!-- Footer Start -->
+    <footer class="text-center">
+        <p class="mb-0 font_2_medium color_white wow fadeInUp" data-wow-delay="0.2s">Copyright 2021. Vrundavan Infosys. All Rights Reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- social Media -->
+
+        <div class="s-soft">
+            <a href="https://join.skype.com/invite/vbP8xVegUwAM" target="_blank" class="s-item skype">
+                <span class="fab fa-skype"></span>
+            </a>
+            <a href="https://wa.me/919409481342" target="_blank" class="s-item whatsapp">
+                <span class="fa fa-whatsapp"></span>
+            </a>
+        </div>
+        
+    
+
+
+
+    <!-- jquery , Bootstrap  with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/script.js"></script>
+    </body>
+</html>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $('#nav-icon3').click(function () {
+            $(this).toggleClass('open');
+            $(".slider-nav-thumbnails").toggle();
+        });
+        new WOW().init();
+        
+    });
+
+</script>
+
+<?php
+    if (isset($_SESSION['alert'])) {
+        $message = $_SESSION['alert'];
+        unset($_SESSION['alert']);
+    ?>
+        <script src="<?php echo url('/assets/js/sweetalert2.js') ?>"></script>
+        <script>
+        Swal.fire(
+            '<?php echo ($message['title']) ?>',
+            '<?php echo ($message['body']) ?>',
+            '<?php echo ($message['type']) ?>',
+        )
+        </script>
+    <?php
+    }
+?>
