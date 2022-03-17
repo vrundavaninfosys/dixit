@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
         
         if ($stmt->execute()) {
             $_SESSION['alert'] = ['title' => 'Form Submit Successfully','body' => 'We Will Get Back To You Soon', 'type' => 'success'];
-            header('location:'.url(''));
+            header('location:'.url('index.php'));
             die();
         }         
         else
