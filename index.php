@@ -52,16 +52,16 @@
                                 <a href="#home" class="nav-link menu font_2_medium color_black active">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="About Us.html" class="nav-link menu font_2_medium color_black">About Us</a>
+                                <a href="About Us.php" class="nav-link menu font_2_medium color_black">About Us</a>
                             </li>
                             <li class="nav-item has-child">
                                 <a  class="nav-link has-link menu font_2_medium color_black">Services <i class="fas fa-angle-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a class="nav-link menu " href="Website Development.html">Web Design &amp; Development</a></li>
-                                    <li class="menu-item"><a class="nav-link menu" href="Mobile Application Development.html">Application Design &amp; Development</a></li>
-                                    <li class="menu-item"><a class="nav-link menu" href="Graphics Designing.html">Graphics Designing</a></li>
-                                    <li class="menu-item"><a class="nav-link menu" href="Digital Marketing.html">Digital Marketing</a></li>
-                                    <li class="menu-item"><a class="nav-link menu" href="Server Setup.html">Server Setup &amp; Support</a></li>
+                                    <li class="menu-item"><a class="nav-link menu " href="Website Development.php">Web Design &amp; Development</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Mobile Application Development.php">Application Design &amp; Development</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Graphics Designing.php">Graphics Designing</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Digital Marketing.php">Digital Marketing</a></li>
+                                    <li class="menu-item"><a class="nav-link menu" href="Server Setup.php">Server Setup &amp; Support</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -71,7 +71,7 @@
                                 <a href="#how it works" class="nav-link menu font_2_medium color_black">How It Works</a>
                             </li>
                             <li class="nav-item">
-                                <a href="Contact Us.html" class="nav-link menu font_2_medium color_black">Contact Us</a>
+                                <a href="Contact Us.php" class="nav-link menu font_2_medium color_black">Contact Us</a>
                             </li>
                         </ul>
                     
@@ -615,11 +615,11 @@
     <!-- Work Process Section End -->
 
     <!-- Contact Section Start -->
-    <section class="contact_section" id="contact">
+    <section class="contact_section" >
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="heading heading_center text-center">
+                    <div class="heading heading_center text-center" id="contact">
                         <h1 class="font_1 color_blue wow fadeInDown" data-wow-delay="0.1s">Contact <span class="color_pink">Form</span></h1>
                     </div>
                 </div>
@@ -630,13 +630,13 @@
                         <form method="POST" action="<?php echo url('contact_form.php') ?>">
                             <h2 class="font_2_bold color_black">Get in Touch</h2>
                             <div class="mb-3">
-                                <input type="text" class="form-control custom_form_control" placeholder="Full Name*" name="fname">
+                                <input type="text" class="form-control custom_form_control" placeholder="Full Name*" name="fname" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control custom_form_control" placeholder="Contact Number*" name="lname">
+                                <input type="tel" class="form-control custom_form_control" placeholder="Contact Number*" name="num"  minlength="10" maxlength="14" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control custom_form_control" placeholder="Email*" name="email">
+                                <input type="email" class="form-control custom_form_control" placeholder="Email*" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <select class="form-service" required name="service_id">
@@ -654,7 +654,7 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Message*" name="message"></textarea>
+                                <textarea class="form-control" rows="4" placeholder="Message*" name="message"></textarea required>
                             </div>
                             <button class="blue_btn btn font_2_bold text-uppercase wow fadeInLeft" data-wow-delay="0.3s" type="submit" value="add" name="submit">Send Message</button>
                         </form>
